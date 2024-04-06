@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Oders",
+    "dateExported": "2024-04-04T15:19:38.578Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95873d1f-1e2c-4ac6-a0fc-60d2a633a13e",
+            "colId": "4f7eb1a6-688a-46c3-b960-78a19b486297",
+            "containerId": "",
+            "name": "Get items",
+            "url": "http://localhost:5000/item",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-04T15:07:34.646Z",
+            "modified": "2024-04-04T15:07:47.719Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "85c125af-c85d-41c5-8ec3-42d4754af13d",
+            "colId": "4f7eb1a6-688a-46c3-b960-78a19b486297",
+            "containerId": "",
+            "name": "Post Item",
+            "url": "http://localhost:5000/item",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-04T15:07:52.007Z",
+            "modified": "2024-04-04T15:12:10.053Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"trackingId\": 1250,\r\n    \"product\": \"Headphones\",\r\n    \"customer\": \"Bob Johnson\",\r\n    \"date\": \"2024-04-03\",\r\n    \"amount\": 100,\r\n    \"paymentMode\": \"Debit Card\",\r\n    \"status\": \"Delivered\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bfaf92b9-c2f9-4c00-96d0-f9724ca3da0e",
+            "colId": "4f7eb1a6-688a-46c3-b960-78a19b486297",
+            "containerId": "",
+            "name": "Update Item",
+            "url": "http://localhost:5000/item",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-04T15:07:54.142Z",
+            "modified": "2024-04-04T15:17:02.266Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"trackingId\": 1250,\r\n    \"product\": \"Headphones\",\r\n    \"customer\": \"Bob Johnson\",\r\n    \"date\": \"2024-04-03\",\r\n    \"amount\": 100,\r\n    \"paymentMode\": \"Debit Card\",\r\n    \"status\": \"Done\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa05fa84-9656-48ea-b4ee-c9a5ffe0bb73",
+            "colId": "4f7eb1a6-688a-46c3-b960-78a19b486297",
+            "containerId": "",
+            "name": "Delete Item",
+            "url": "http://localhost:5000/item/1250",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-04T15:07:57.511Z",
+            "modified": "2024-04-04T15:15:32.216Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
